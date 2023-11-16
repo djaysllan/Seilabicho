@@ -1,7 +1,7 @@
-from telegram.ext import Updater, CommandHandler
+from telegram.ext import Updater, CommandHandler, CallbackContext
 
 # Função para o comando /start
-def start(update, context):
+def start(update, context: CallbackContext):
     update.message.reply_text('Olá! Eu sou o seu bot.')
 
 def main():
